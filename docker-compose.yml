@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  tool:
+    build: ./docker/tool
+    container_name: getitword
+    volumes:
+      - ./src/tool:/code
+    tty: true
+
+  splash:
+    restart: always
+    image: scrapinghub/splash
+    ports:
+      - "5023:5023"
+      - "8050:8050"
+      - "8051:8051"

@@ -1,0 +1,10 @@
+*.log
+*.pot
+*.pyc
+__pycache__/
+media
+/src/project/logs/*
+!/src/project/logs/.gitkeep
+client_credentials.my.json
+client_credentials.json
+mecab-ipadic-neologd

@@ -1,0 +1,2 @@
+class CotohaApiError(Exception):
+    pass
